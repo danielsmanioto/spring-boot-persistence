@@ -1,2 +1,16 @@
 # spring-boot-persistence
-diferente project about java persistence with spring
+
+
+<p>POCs</p> with example using Java persistence;
+
+# Tecnologies
+
+<p>Java11</p>
+<p>Gradle</p>
+<p>Sprint-boot</p>
+
+<p>Database: H2DB</p>
+<p>Database: MYSQL</p>
+
+<p>Migration - Flyway</p>
+<p>Migration - Liquidbase</p>
