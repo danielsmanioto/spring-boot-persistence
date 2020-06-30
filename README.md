@@ -3,6 +3,10 @@
 
 <p>POCs</p> with example using Java persistence;
 
+# Architecture design & Diagram
+  
+  <img src="persistence.png"/>
+
 # Tecnologies
 
 <p>Java11</p>
