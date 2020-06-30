@@ -5,7 +5,7 @@
 
 # Architecture design & Diagram
   
-  <img src="persistence-jpa.png"/>
+  <img src="persistence.png"/>
 
 # Tecnologies
 
