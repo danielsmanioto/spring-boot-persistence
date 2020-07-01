@@ -1,0 +1,23 @@
+# Docker with mongo db
+https://github.com/danielsmanioto/docker/blob/master/database-mongodb/README
+
+#Tecnologies
+Gradle
+Java11
+Lombok
+Mongotest
+MOngoembeded
+jpa
+
+#How can i test
+
+1) execute the test stack
+2) via get -> curl http://localhost:8080/provider
+
+# mongo shel
+
+`db`
+
+`use mongo-api`
+
+`db.provider.find().pretty()`
