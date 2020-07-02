@@ -17,8 +17,16 @@ public class ProviderService {
  		return repository.findAll();
 	}
 	
-	public void insert(Provider providerDefault) {
-		repository.insert(providerDefault);
+	public Provider insert(Provider providerDefault) {
+		return repository.insert(providerDefault);
 	}
-	
+
+    public void insert(List<Provider> providers) {
+    	repository.insert(providers);
+	}
+
+	public void removeById(String id) {
+		repository.deleteById(id);
+	}
+
 }
