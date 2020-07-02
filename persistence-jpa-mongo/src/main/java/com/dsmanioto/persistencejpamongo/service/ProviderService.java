@@ -29,4 +29,28 @@ public class ProviderService {
 		repository.deleteById(id);
 	}
 
+	public void remove(Provider provider) {
+		repository.delete(provider);
+	}
+
+	public void remove(List<Provider> providers) {
+		repository.deleteAll(providers);
+	}
+
+	public void removeAll() {
+		repository.deleteAll();
+	}
+
+	public Provider findById(String id) {
+		return repository.findById(id).orElse(Provider.builder().build());
+	}
+
+	public void update(Provider provider) {
+		repository.save(provider);
+	}
+
+	public void update(List<Provider> providers) {
+		repository.saveAll(providers);
+	}
+
 }

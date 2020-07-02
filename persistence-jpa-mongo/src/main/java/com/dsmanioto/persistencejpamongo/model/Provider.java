@@ -14,5 +14,7 @@ public class Provider {
 	private String _id;
 	
 	private String name;
-	
+
+	private Integer age;
+
 }
