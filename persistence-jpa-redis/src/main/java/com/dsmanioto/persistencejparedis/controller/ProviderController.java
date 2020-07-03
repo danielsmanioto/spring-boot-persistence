@@ -1,10 +1,10 @@
 package com.dsmanioto.persistencejparedis.controller;
 
-import com.dsmanioto.persistencejparedis.service.ProviderService;
+import com.dsmanioto.persistencejparedis.model.Provider;
+import com.dsmanioto.persistencejparedis.repository.ProviderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,20 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProviderController {
 
     @Autowired
-    private ProviderService service;
+    private ProviderRepository repository;
 
-    @GetMapping("/findAll")
-    @Cacheable("findAll")
-    public String findAll() {
-        System.out.println("SEM CACHE");
-        return "Hello";
-    }
-
-    @GetMapping("/clean-cache")
-    @CacheEvict("findAll")
-    public String cleanCache() {
-        System.out.println("CACHE LIMPO ...");
-        return "CLEAN CACHE";
+    @GetMapping("/{id}")
+    public Provider findById(@PathVariable String id) {
+        return repository.findById(id);
     }
 
 }

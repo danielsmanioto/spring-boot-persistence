@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * For Redis: You need to up the redis sever , follow configurations Caching
+ */
 @RestController
 @RequestMapping("/cache")
 public class CacheController {

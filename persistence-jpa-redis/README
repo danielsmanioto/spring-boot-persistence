@@ -19,16 +19,19 @@ jpa
 
 curl http://localhost:8080/provider
 
-# Cache do spring - exemplo
+# Cache Example
+
 http://localhost:8080/cache/hello
 http://localhost:8080/cache/clean-cache
 
-# Cache com redis - exemplo
-http://localhost:8080/redis/hello
-http://localhost:8080/redis/clean-cache
+curl -d '{}' -H "Content-Type: application/json" -X POST http://localhost:8080/user
+curl http://localhost:8080/user/1
 
-a estrategia é alterada pelo application.propertes
+A estrategia é alterada pelo application.propertes (para usar ou nao o redis)
 
 # References
 
+https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-caching.html
 https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/#reference
+https://medium.com/@hulunhao/how-to-use-redis-template-in-java-spring-boot-647a7eb8f8cc
+https://www.youtube.com/watch?v=HMEwYxXFTjM

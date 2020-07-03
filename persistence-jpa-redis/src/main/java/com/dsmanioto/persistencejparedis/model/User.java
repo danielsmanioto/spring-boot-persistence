@@ -7,13 +7,13 @@ import org.springframework.data.redis.core.RedisHash;
 
 import java.io.Serializable;
 
-@RedisHash("Provider")
 @Getter
 @Setter
 @Builder
-public class Provider implements Serializable {
+@RedisHash("User")
+public class User implements Serializable {
 
-    private String id;
+    private Integer userId;
     private String name;
 
 }
