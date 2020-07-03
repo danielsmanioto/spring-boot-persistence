@@ -8,7 +8,7 @@
   <img src="persistence.png"/>
 
 # Redis Architecture  
-  <img src="redis_architecture.png"/>
+  <img src="redis_arquitecture.png"/>
 
 # Tecnologies
 
