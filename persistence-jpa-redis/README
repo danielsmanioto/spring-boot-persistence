@@ -1,0 +1,34 @@
+# Docker with redis
+https://github.com/danielsmanioto/docker/tree/master/database-redis
+
+#Tecnologies
+Gradle
+Java11
+Lombok
+Redis
+jpa
+
+#How can i test
+
+1) execute the test stack
+2) via get -> curl http://localhost:8080/provider
+
+# redis shell
+
+# api
+
+curl http://localhost:8080/provider
+
+# Cache do spring - exemplo
+http://localhost:8080/cache/hello
+http://localhost:8080/cache/clean-cache
+
+# Cache com redis - exemplo
+http://localhost:8080/redis/hello
+http://localhost:8080/redis/clean-cache
+
+a estrategia é alterada pelo application.propertes
+
+# References
+
+https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/#reference
