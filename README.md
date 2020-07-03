@@ -7,6 +7,9 @@
   
   <img src="persistence.png"/>
 
+# Redis Architecture  
+  <img src="redis_architecture.png"/>
+
 # Tecnologies
 
 <p>Java11</p>
